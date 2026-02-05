@@ -341,6 +341,18 @@ function play(n) {
     document.querySelectorAll("audio")[n].play();
 }
 
+function randomPlay() {
+    const n = Math.floor(Math.random() * list.length);
+    const playing = isPlaying();
+    if (playing) {
+        document.querySelectorAll("audio")[playing].pause();
+        document.querySelectorAll("audio")[playing].currentTime = 0;
+    }
+    document.querySelectorAll("audio")[n].play();
+}
+
+document.querySelector("button").addEventListener("click", randomPlay);
+
 function isPlaying() {
     for (let i = 0; i < document.querySelectorAll("audio").length; i++) {
         if (!document.querySelectorAll("audio")[i].paused) {
