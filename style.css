@@ -1,3 +1,12 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35vh;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
 main {
     display: flex;
     justify-content: space-around;
