@@ -325,6 +325,11 @@ const list = [
         text: "Ouah wowow",
         source: "Kayou"
     },
+    {
+        path: "./audio/agression.mp3",
+        text: "sdjfhgskfgb",
+        source: "Kayou"
+    },
 ];
 
 function play(n) {
