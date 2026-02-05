@@ -385,26 +385,26 @@ for (let i = 0; i < list.length; i++) {
     createCard(i);
 }
 
-document.querySelector("select").addEventListener("change", function (e) {
-    main.innerHTML = "";
-    if (e.target.value === "all") {
-        for (let i = 0; i < list.length; i++) {
-            createCard(i);
-        }
-    } else {
-        for (let i = 0; i < list.length; i++) {
-            if (e.target.value === list[i].source) {
-                createCard(i);
-            }
-        }
-    }
-})
+// document.querySelector("select").addEventListener("change", function (e) {
+//     main.innerHTML = "";
+//     if (e.target.value === "all") {
+//         for (let i = 0; i < list.length; i++) {
+//             createCard(i);
+//         }
+//     } else {
+//         for (let i = 0; i < list.length; i++) {
+//             if (e.target.value === list[i].source) {
+//                 createCard(i);
+//             }
+//         }
+//     }
+// })
 
-document.querySelector("input").addEventListener("keyup", function (e) {
-    main.innerHTML = "";
-    for (let i = 0; i < list.length; i++) {
-        if (list[i].text.toLowerCase().includes(e.target.value)) {
-            createCard(i);
-        }
-    }
-})
+// document.querySelector("input").addEventListener("keyup", function (e) {
+//     main.innerHTML = "";
+//     for (let i = 0; i < list.length; i++) {
+//         if (list[i].text.toLowerCase().includes(e.target.value)) {
+//             createCard(i);
+//         }
+//     }
+// })
