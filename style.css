@@ -15,6 +15,10 @@ main p {
     padding-bottom: 2vh;
 }
 
+main div {
+    width: 40vw;
+}
+
 main button {
     width: 40vw;
     height: 40vw;
