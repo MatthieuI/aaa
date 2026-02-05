@@ -15,7 +15,7 @@ main p {
     padding-bottom: 2vh;
 }
 
-button {
+main button {
     width: 40vw;
     height: 40vw;
     border: none;
