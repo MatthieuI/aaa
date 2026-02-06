@@ -395,7 +395,6 @@ function createCard(i) {
 const main = document.querySelector("main");
 for (let i = 0; i < list.length; i++) {
     createCard(i);
-    console.log(document.querySelectorAll[i].duration);
 }
 
 // document.querySelector("select").addEventListener("change", function (e) {
