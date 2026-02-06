@@ -4,7 +4,6 @@ const list = [
         text: "J'suis à bout",
         source: "Meloo"
     },
-
     {
         path: "./audio/appelpapa.mp3",
         text: "J'vais appeler ton papa",
@@ -350,8 +349,14 @@ function randomPlay() {
     }
     document.querySelectorAll("audio")[n].play();
 }
-
 document.querySelector("button").addEventListener("click", randomPlay);
+
+document.querySelector("#gay").addEventListener("click", function () {
+    play(41);
+    setTimeout(() => {
+        randomPlay();
+    }, 1600);
+})
 
 function isPlaying() {
     for (let i = 0; i < document.querySelectorAll("audio").length; i++) {
