@@ -358,6 +358,13 @@ document.querySelector("#gay").addEventListener("click", function () {
     }, 1600);
 })
 
+document.querySelector("#gueule").addEventListener("click", function () {
+    randomPlay();
+    setTimeout(() => {
+        play(48);
+    }, 1600);
+})
+
 function isPlaying() {
     for (let i = 0; i < document.querySelectorAll("audio").length; i++) {
         if (!document.querySelectorAll("audio")[i].paused) {
@@ -388,6 +395,7 @@ function createCard(i) {
 const main = document.querySelector("main");
 for (let i = 0; i < list.length; i++) {
     createCard(i);
+    console.log(document.querySelectorAll[i].duration);
 }
 
 // document.querySelector("select").addEventListener("change", function (e) {
